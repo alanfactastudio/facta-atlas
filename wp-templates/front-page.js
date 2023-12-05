@@ -34,6 +34,7 @@ export default function Component(props) {
             className={style.card}
           >
             <h3>Documentation →</h3>
+            <p>Sample text here</p>
             <p>
               Learn more about Faust.js through guides and reference
               documentation.
