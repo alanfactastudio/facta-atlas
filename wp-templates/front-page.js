@@ -48,6 +48,7 @@ export default function Component(props) {
             className={style.card}
           >
             <h3>Blueprints →</h3>
+            <p>Sample text here</p>
             <p>Explore production ready Faust.js starter projects.</p>
           </Link>
 
