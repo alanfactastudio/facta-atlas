@@ -26,55 +26,7 @@ export default function Component(props) {
       <main className="container">
         <EntryHeader title="Welcome to the Faust Scaffold Blueprint" />
 
-        <section className={style.cardGrid}>
-          <Link
-            href="https://faustjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={style.card}
-          >
-            <h3>Documentation →</h3>
-            <p>Sample text here</p>
-            <p>
-              Learn more about Faust.js through guides and reference
-              documentation.
-            </p>
-          </Link>
-
-          <Link
-            href="https://my.wpengine.com/atlas#/create/blueprint"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={style.card}
-          >
-            <h3>Blueprints →</h3>
-            <p>Sample text here</p>
-            <p>Explore production ready Faust.js starter projects.</p>
-          </Link>
-
-          <Link
-            href="https://wpengine.com/atlas"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={style.card}
-          >
-            <h3>Deploy →</h3>
-            <p>
-              Deploy your Faust.js app to Atlas along with your WordPress
-              instance.
-            </p>
-          </Link>
-
-          <Link
-            href="https://github.com/wpengine/faustjs"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={style.card}
-          >
-            <h3>Contribute →</h3>
-            <p>Visit us on GitHub to explore how you can contribute!</p>
-          </Link>
-        </section>
+        
       </main>
 
       <Footer />
