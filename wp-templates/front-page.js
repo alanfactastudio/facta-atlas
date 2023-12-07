@@ -5,6 +5,23 @@ import Header from "../components/header";
 import EntryHeader from "../components/entry-header";
 import Footer from "../components/footer";
 import style from "../styles/front-page.module.css";
+import { client } from 'client';
+import Post from 'components/post';
+
+export default function PostsPage() {
+  const { usePosts } = client;
+  const posts = usePosts()?.nodes;
+
+  return (
+    <div>
+      <h1>My posts</h1>
+      {posts.map((post) => (
+        <Post key={post.id} title={post.title} content={post.content} />
+      ))}
+    </div>
+  );
+}
+
 
 export default function Component(props) {
   const { title: siteTitle, description: siteDescription } =
@@ -40,3 +57,6 @@ Component.query = gql`
     ...HeaderFragment
   }
 `;
+
+
+// /wp-json/wp/v2/book/{ID}
