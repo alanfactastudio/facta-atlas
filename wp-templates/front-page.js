@@ -28,7 +28,7 @@ export default function Component(props) {
         <EntryHeader title="Welcome to the Faust Scaffold Blueprint" /> 
       </main>
 
-      <Post />
+      <Post title="Sending title data to componenet" />
 
       <Footer />
     </>

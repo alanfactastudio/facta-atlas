@@ -1,7 +1,8 @@
-export default function Post(props) {
+import { gql } from "@apollo/client";
+import { client } from 'client';
+
+export default function Post(title) {
     return (
-        <h1>
-          Test Post
-        </h1>
+        {title && <h1 className={style.title}>{title}</h1>}
       );
 }
