@@ -6,7 +6,7 @@ import EntryHeader from "../components/entry-header";
 import Footer from "../components/footer";
 import style from "../styles/front-page.module.css";
 import { client } from 'client';
-import Post from 'components/post';
+import Post from '../components/post';
 export default function Component(props) {
   const { title: siteTitle, description: siteDescription } =
     props.data.generalSettings;
@@ -27,6 +27,8 @@ export default function Component(props) {
       <main className="container">
         <EntryHeader title="Welcome to the Faust Scaffold Blueprint" /> 
       </main>
+
+      <Post />
 
       <Footer />
     </>

@@ -22,10 +22,10 @@ export default function Team() {
         <div className="wrap">
           <h2>Team Members</h2>
 
-          {teamMembers.map((teamMember) => (
+          {teamMembers.map((team) => (
             <TeamMember key={teamMember.id} teamMember={teamMember} />
           ))}
-          
+
         </div>
       </main>
 
