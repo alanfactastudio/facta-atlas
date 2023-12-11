@@ -11,8 +11,6 @@ export default function Component(props) {
   const { title: siteTitle, description: siteDescription } =
     props.data.generalSettings;
   const menuItems = props.data.primaryMenuItems.nodes;
-  const { usePosts } = client;
-  const posts = usePosts()?.nodes;
 
   return (
     <>
@@ -28,14 +26,6 @@ export default function Component(props) {
 
       <main className="container">
         <EntryHeader title="Welcome to the Faust Scaffold Blueprint" /> 
-
-        <div>
-          <h1>My posts</h1>
-          {posts.map((post) => (
-            <Post key={post.id} title={post.title} content={post.content} />
-          ))}
-        </div>
-
       </main>
 
       <Footer />
